@@ -172,6 +172,8 @@ const Carousel = React.createClass({
       <div className={['slider', this.props.className || ''].join(' ')} ref="slider" style={assign(this.getSliderStyles(), this.props.style || {})}>
         <div className="slider-frame"
           ref="frame"
+          nextSlide={this.nextSlide}
+          previousSlide={this.previousSlide}
           style={this.getFrameStyles()}
           {...this.getTouchEvents()}
           {...this.getMouseEvents()}
