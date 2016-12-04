@@ -18,13 +18,10 @@ const DefaultDecorators = [
       },
       getButtonStyles(disabled) {
         return {
-          border: 0,
-          background: 'rgba(0,0,0,0.4)',
-          color: 'white',
-          padding: 10,
-          outline: 0,
-          opacity: disabled ? 0.3 : 1,
-          cursor: 'pointer'
+          height:0,
+          width:0,
+          padding:0,
+          border:0,
         }
       }
     }),
@@ -59,13 +56,10 @@ const DefaultDecorators = [
       },
       getButtonStyles(disabled) {
         return {
-          border: 0,
-          background: 'rgba(0,0,0,0.4)',
-          color: 'white',
-          padding: 10,
-          outline: 0,
-          opacity: disabled ? 0.3 : 1,
-          cursor: 'pointer'
+          height:0,
+          width:0,
+          padding:0,
+          border:0,
         }
       }
     }),
