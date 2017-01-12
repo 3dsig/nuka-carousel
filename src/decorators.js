@@ -153,7 +153,7 @@ const DefaultDecorators = [
           padding: 10,
           outline: 0,
           fontSize: 24,
-          opacity: active ? 1 : 0.5
+          opacity: active ? 0.6 : 0.3
         }
       }
     }),

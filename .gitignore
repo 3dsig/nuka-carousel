@@ -32,3 +32,8 @@ bower_components/
 .tmp
 dist
 /src/scripts/main.js
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/nuka-carousel.iml
+.idea/workspace.xml
