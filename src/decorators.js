@@ -134,7 +134,6 @@ const DefaultDecorators = [
         return {
           position: 'relative',
           margin: 0,
-          bottom: -60,
           padding: 0
         }
       },
