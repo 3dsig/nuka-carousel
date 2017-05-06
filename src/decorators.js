@@ -3,68 +3,7 @@
 import React from 'react';
 
 const DefaultDecorators = [
-  {
-    component: React.createClass({
-      render() {
-        return (
-          <button
-            style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
-            onClick={this.handleClick}>PREV</button>
-        )
-      },
-      handleClick(e) {
-        e.preventDefault();
-        this.props.previousSlide();
-      },
-      getButtonStyles(disabled) {
-        return {
-          height:0,
-          width:0,
-          padding:0,
-          border:0,
-        }
-      }
-    }),
-    position: 'CenterLeft'
-  },
-  {
-    component: React.createClass({
-      render() {
-        let cellOffsetPosition = this.props.slideCount - 1;
-
-        if (this.props.scrollMode === 'remainder') {
-          switch (this.props.cellAlign) {
-          case 'center':
-            cellOffsetPosition =
-              this.props.slideCount - Math.ceil(this.props.slidesToShow / 2)
-              - (this.props.slidesToShow % 2 === 0 ? 1 : 0);
-            break;
-          case 'left':
-            cellOffsetPosition = this.props.slideCount - this.props.slidesToShow;
-          }
-        }
-
-        return (
-          <button
-            style={this.getButtonStyles(this.props.currentSlide === cellOffsetPosition && !this.props.wrapAround)}
-            onClick={this.handleClick}>NEXT</button>
-        )
-      },
-      handleClick(e) {
-        e.preventDefault();
-        this.props.nextSlide();
-      },
-      getButtonStyles(disabled) {
-        return {
-          height:0,
-          width:0,
-          padding:0,
-          border:0,
-        }
-      }
-    }),
-    position: 'CenterRight'
-  },
+  
   {
     component: React.createClass({
       render() {
